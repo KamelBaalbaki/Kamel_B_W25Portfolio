@@ -226,10 +226,14 @@ export const Contact = () => {
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                       <item.icon className="w-5 h-5 text-primary" />
                     </div>
-                    <div className="text-sm text-muted-foreground">
-                      {item.label}
+                    <div className="flex flex-col">
+                      <span className="text-sm text-muted-foreground">
+                        {item.label}
+                      </span>
+                      <span className="font-medium break-all">
+                        {item.value}
+                      </span>
                     </div>
-                    <div className="font-medium">{item.value}</div>
                   </a>
                 ))}
               </div>
